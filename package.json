@@ -1,0 +1,17 @@
+{
+  "name": "rqdesk-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "stgosm",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
+}
