@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const RequirementSchema = new mongoose.Schema({
     rqName: String,
     rqDescription: String,
-    rqTags: String,
     rqStatus: String,
+    rqTags: [String],
     rqArea: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Area',
+        ref: 'Areas',
     },
     rqUser: {
         type: mongoose.Schema.Types.ObjectId,
